@@ -1,3 +1,8 @@
+<h1>My-words-react</h1>
+<p>This is the first version of the project for learning English words (Vue3 version is <a href="https://github.com/riderclass/my-words-vue"><strong>here</strong></a>) created on React.js.</p>
+<p>Unlike the Vue.js version, here you will find more truncated functionality.</p>
+<p>The working version of the project is here: <a href="https://my-words-135c5.web.app/"><strong>https://my-words-135c5.web.app/</strong></a></p>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
