@@ -1,38 +1,299 @@
-.App {
+.body-box {
+  background-color: white;
+}
+
+.head-block {
+  display:flex;
+}
+
+.logo-block {
+  flex: 7
+}
+
+.menu-block {
+  flex:2
+}
+
+.auth-name {
+  font-size: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.auth-name p {
+  margin:0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo-img {
+  width: 35px;
+  height: 35px;
+  margin-left: 5px;
+  margin-top: 3px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logo-link {
+  text-decoration: none;
+  color:black;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.logo-link:hover, .logo-link:active {
+  text-decoration: none;
+  color:black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.lineZone {
+  display: flex;
+  margin: 0px 0px 20px 0px;
+}
+
+.lineZone div:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.lineZone div:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.linePart {
+  width: -webkit-fill-available;
+  height: 7px;
+  background: #e7e7e7;
+}
+
+.correctAnn {
+  background: #5dc02d !important;
+  width: -webkit-fill-available;
+  height: 7px;
+}
+
+.wordImage {
+  height: 110px;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.imgBox {
+  height: 110px;
+  margin: 5px 0 20px 0px;
+  width: 70%;
+}
+
+.keyWord::first-letter {
+  text-transform: uppercase;
+}
+
+.themeNote {
+  text-transform: lowercase;
+  color: #838383ab;
+}
+
+.screenBox {
+  overflow: scroll;
+  height: 589px;
+}
+
+
+/*МЕНЮ*/
+
+#container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/*МЕНЮ ЗАКОНЧИЛОСЬ*/
+
+.mobile-box {
+  width:644px;
+  margin: 0 auto;
+  background-image: url(/public/androidbg.png);
+  background-size: cover;
+  height: 750px;
+}
+
+.mobile-content {
+  width: 300px;
+  margin: 0 auto;
+  padding-top: 100px;
+  height: 700px;
+}
+
+.sub-btn {
+  height: 48px;
+  background: none;
+  color: #303030;
+  border: 1px solid #a7a7a7;
+  width: 100%;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+
+.sub-btn-choose {
+  height: 40px;
+  background: none;
+  color: #303030;
+  border: 1px solid #a7a7a7;
+  width: 100%;
+  font-size: 13px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  margin-bottom: 1px;
+}
+
+.sub-btn-choose:hover, .sub-btn:hover {
+  background: #fafafa;
+}
+
+
+.clear-btn {
+  width: 200px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 10px;
+  background: #e7e7e7;
+  color: black;
+  padding: 0;
+  height: 37px;
+  text-transform: uppercase;
+  font-size: 13px;
+  border: none;
+}
+
+.app-title {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 30px;
+}
+
+.choose-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+  
+@media screen and (max-width: 420px) {
+
+  .body-box {
+    height: auto;
+}
+
+  .mobile-box {
+    width: 100%;
+    margin: 0 auto;
+    background-image: unset;
+    background-size: cover;
+    height: unset;
+}
+
+.mobile-content {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 5px 0px 20px;
+  height: unset;
+  overflow: unset;
+}
+
+.screenBox {
+  height: auto;
+  overflow: scroll;
+}
+
+.menu-block {
+  width:100%;
+}
+
+.blockquote-footer {
+  font-size: 11px;
+}
+
+.menu-block #container {
+  float: right;
+  margin-right: 20px;
+}
+
+
+.modal {
+  width:100% !important;
+}
+
+.change .bar1 {
+  transform: rotate(-45deg) translate(-6px, 4px);
+}
+
+.bar1, .bar2, .bar3 {
+  width: 30px;
+  height: 3px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.wordImage {
+  width: 100%;
+  object-fit: cover;
+  height: 120px;
+    border-radius: 10px;
+}
+
+.imgBox {
+  width: 70%;
+  height: 120px;
+  margin: 5px 0 20px 0px;
+  margin-bottom: 20px;
+}
+
+}
+
+:root {
+  --scrollbarBgColor: white;
+  --scrollbarThumbColor: rgba(0, 0, 0, .15);
+  --scrollbarThumbColorSecond: rgba(199, 162, 162, 0.7);
+  --scrollbarWidth: 3px;
+  --scrollbarBorder: 0 solid var(--scrollbarBgColor);
+  --scrollbarBorderRadius: calc(var(--scrollbarWidth) / 4);
+}
+.screenBox {
+  scrollbar-width: var(--scrollbarWidth);
+  scrollbar-color: var(--scrollbarThumbColor) var(--scrollbarBgColor);
+}
+.screenBox::-webkit-scrollbar {
+  width: var(--scrollbarWidth);
+}
+.screenBox::-webkit-scrollbar-track {
+  background: var(--scrollbarBgColor);
+  border-radius: var(--scrollbarBorderRadius);
+}
+.screenBox::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbarThumbColor);
+  border-radius: var(--scrollbarBorderRadius);
+  border: var(--scrollbarBorder);
+  background-image: linear-gradient(
+    180deg,
+    var(--scrollbarThumbColor) 0%,
+    var(--scrollbarThumbColorSecond) 90%
+  );
 }
